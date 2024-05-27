@@ -7,12 +7,15 @@ public class ContaTerminal {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
+        //Mesagens a serem exibidas ao usuário
+        //nextLine é usado para capturar entradas que podem conter espaços, como o nome completo.
+        
         System.out.println("Para começarmos, digite seu nome: ");
         String nomeCliente = scanner.nextLine();
 
         System.out.println("Por favor, digite o número da agência: ");
         String agencia = scanner.nextLine();
-
+    
         System.out.println("Estamos quase lá, digite o número da conta: ");
         int numeroConta = scanner.nextInt();
 
